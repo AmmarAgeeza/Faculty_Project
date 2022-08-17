@@ -1,5 +1,7 @@
-import 'package:faculty_project/screens/splash.dart';
+import 'package:faculty_project/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
+
+import 'shared/constants/constants.dart';
 
 void main() {
   runApp(const MyApp());
@@ -8,11 +10,10 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of  application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'Faculty App',
+    return MaterialApp(
+      title: AppStrings.appTitle,
       home: SplashScreen(),
     );
   }
