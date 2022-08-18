@@ -16,11 +16,12 @@ class HomePage extends StatelessWidget {
             return Scaffold(
               body: cubit.screens[cubit.currentIndex],
               bottomNavigationBar: BottomNavigationBar(
+                currentIndex: cubit.currentIndex,
                 onTap: (index){
                   cubit.changeCurrentPage(index);
                 },
                 items: const [
-                  BottomNavigationBarItem(icon: Icon(Icons.folder,color: Colors.grey,),label: ''),
+                  BottomNavigationBarItem(icon: Icon(Icons.folder,),label: ''),
                   BottomNavigationBarItem(icon: Icon(Icons.show_chart),label: ''),
                 ],
               ),
