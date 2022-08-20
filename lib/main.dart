@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
-import 'package:faculty_project/layout/home_page.dart';
+import 'package:faculty_project/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'shared/cubit/bloc_observer.dart';
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: AppStrings.appTitle,
       theme: getAppTheme(),
-      home: const HomePage(),
+      home: const SplashScreen(),
     );
   }
 }
