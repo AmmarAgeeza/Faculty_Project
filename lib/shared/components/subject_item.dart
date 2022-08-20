@@ -17,8 +17,9 @@ class SubjectItem extends StatelessWidget {
           borderRadius: BorderRadius.circular(15),
         ),
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
+            const SizedBox(width: 15,),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -36,7 +37,14 @@ class SubjectItem extends StatelessWidget {
                 ),
               ],
             ),
-            const Icon(Icons.delete)
+            const SizedBox(width: 160,),
+            Container(
+              padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: ColorManager.blueGrey,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: const Icon(Icons.forward))
           ],
         ),
       ),

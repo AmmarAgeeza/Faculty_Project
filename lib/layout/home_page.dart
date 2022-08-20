@@ -16,6 +16,7 @@ class HomePage extends StatelessWidget {
             return Scaffold(
               body: cubit.screens[cubit.currentIndex],
               bottomNavigationBar: BottomNavigationBar(
+                // selectedItemColor: Colors.deepOrange,
                 currentIndex: cubit.currentIndex,
                 onTap: (index){
                   cubit.changeCurrentPage(index);
