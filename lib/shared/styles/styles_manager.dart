@@ -5,6 +5,7 @@ import 'fonts_manager.dart';
 TextStyle _getTextStyle(FontWeight fontWeight, double fontSize, Color color) {
   return TextStyle(
     fontWeight: fontWeight,
+
     fontFamily: FontConstants.fontFamily,
     color: color,
     fontSize: fontSize,
@@ -13,25 +14,25 @@ TextStyle _getTextStyle(FontWeight fontWeight, double fontSize, Color color) {
 
 //bold style
 
-TextStyle getBoldStyle({double fontSize = FontSize.s12, required Color color}) {
+TextStyle getBoldStyle({double fontSize = FontSize.s32, required Color color}) {
   return _getTextStyle(FontWeightManager.bold, fontSize, color);
 }
 //semiBold style
 
 TextStyle getSemiBoldStyle(
-    {double fontSize = FontSize.s12, required Color color}) {
+    {double fontSize = FontSize.s16, required Color color}) {
   return _getTextStyle(FontWeightManager.semiBold, fontSize, color);
 }
 //medium style
 
 TextStyle getMediumStyle(
-    {double fontSize = FontSize.s12, required Color color}) {
+    {double fontSize = FontSize.s14, required Color color}) {
   return _getTextStyle(FontWeightManager.medium, fontSize, color);
 }
 //regular style
 
 TextStyle getRegularStyle(
-    {double fontSize = FontSize.s12, required Color color}) {
+    {double fontSize = FontSize.s16, required Color color}) {
   return _getTextStyle(FontWeightManager.regular, fontSize, color);
 }
 //light style
@@ -39,4 +40,8 @@ TextStyle getRegularStyle(
 TextStyle getLightStyle(
     {double fontSize = FontSize.s12, required Color color}) {
   return _getTextStyle(FontWeightManager.light, fontSize, color);
+}
+TextStyle getSubTitleStyle(
+    {double fontSize = FontSize.s14, required Color color}) {
+  return _getTextStyle(FontWeightManager.semiBold, fontSize, color,);
 }
