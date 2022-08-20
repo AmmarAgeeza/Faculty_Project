@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../shared/components/subject_item.dart';
-import '../shared/styles/colors_manager.dart';
 
 class QuestionnaireScreen extends StatelessWidget {
   const QuestionnaireScreen({Key? key}) : super(key: key);
@@ -25,16 +24,16 @@ class QuestionnaireScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text('Subject Name(7)',style: Theme.of(context).textTheme.bodyLarge,),
-              Container(
-                padding: const EdgeInsets.all(8),
-                decoration: BoxDecoration(
-                  color: ColorManager.blueGrey,
-                  borderRadius: BorderRadius.circular(15)
-                ),
-                child: const Center(
-                  child: Text('25% CLEANED'),
-                ),
-              )
+              // Container(
+              //   padding: const EdgeInsets.all(8),
+              //   decoration: BoxDecoration(
+              //     color: ColorManager.white,
+              //     borderRadius: BorderRadius.circular(15)
+              //   ),
+              //   child:  Center(
+              //     child: Text('25% CLEANED',style: TextStyle(color: ColorManager.primary,fontWeight: FontWeight.bold),),
+              //   ),
+              // )
                 ],
               ),
               const SizedBox(height: 20,),

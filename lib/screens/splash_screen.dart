@@ -14,7 +14,7 @@ class SplashScreen extends StatelessWidget {
         body: Container(
           height: double.infinity,
           width: double.infinity,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             image: DecorationImage(
               image: AssetImage(
                 'assets/images/back.png',
@@ -40,7 +40,7 @@ class SplashScreen extends StatelessWidget {
                   decoration: BoxDecoration(
                     image: DecorationImage(
                       image: AssetImage(
-                        'assets/images/background.png',
+                        'assets/images/Background.png',
                       ),
                     ),
                   ),

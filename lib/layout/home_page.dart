@@ -3,6 +3,8 @@ import 'package:faculty_project/shared/cubit/app_states.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../shared/styles/colors_manager.dart';
+
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -18,12 +20,22 @@ class HomePage extends StatelessWidget {
               bottomNavigationBar: BottomNavigationBar(
                 // selectedItemColor: Colors.deepOrange,
                 currentIndex: cubit.currentIndex,
-                onTap: (index){
+                onTap: (index) {
                   cubit.changeCurrentPage(index);
                 },
-                items: const [
-                  BottomNavigationBarItem(icon: Icon(Icons.folder,),label: ''),
-                  BottomNavigationBarItem(icon: Icon(Icons.show_chart),label: ''),
+                items: [
+                  BottomNavigationBarItem(
+                      icon: Icon(
+                        Icons.folder,
+                        color: ColorManager.primary,
+                      ),
+                      label: ''),
+                  BottomNavigationBarItem(
+                      icon: Icon(
+                        Icons.show_chart,
+                        color: ColorManager.primary,
+                      ),
+                      label: ''),
                 ],
               ),
             );

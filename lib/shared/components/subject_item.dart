@@ -41,10 +41,10 @@ class SubjectItem extends StatelessWidget {
             Container(
               padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
-                  color: ColorManager.blueGrey,
+                  color: ColorManager.primary,
                   borderRadius: BorderRadius.circular(15),
                 ),
-                child: const Icon(Icons.forward))
+                child:  Icon(Icons.arrow_forward_ios,color: ColorManager.white,))
           ],
         ),
       ),
