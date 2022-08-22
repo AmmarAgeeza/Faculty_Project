@@ -1,4 +1,7 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
+
 
 class ColorManager {
   static Color primary = const Color(0xff293855);
@@ -16,4 +19,10 @@ class ColorManager {
   static Color grey2 = const Color(0xff797979);
   static Color white = const Color(0xffFAFAFA);
   static Color error = const Color(0xffe61f34);
+
+  static Color white2 = const Color(0xFFD9E8F7);
+  static Color greyWhite = const Color(0xFFD5D3D3);
+  static Color white3 = const Color(0xFFECE8E8);
+  static Color blue10 = const Color(0xFFD9E8F7);
+
 }
