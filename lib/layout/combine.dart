@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../screens/questionnaire_screen.dart';
+import '../screens/sign.dart';
 import '../screens/splash_screen.dart';
 import '../shared/styles/assets_manager.dart';
 import '../shared/styles/colors_manager.dart';
@@ -53,13 +53,13 @@ class CombineState extends State<Combine> {
               OutlinedButton(
                   onPressed: () => Navigator.of(context)
                       .push(MaterialPageRoute(builder: (_) {
-                    return const SplashScreen();
+                    return const Sign();
                   })),
                   child: const Text('Sign up')),
               OutlinedButton(
                   onPressed: () => Navigator.of(context)
                       .push(MaterialPageRoute(builder: (_) {
-                    return const QuestionnaireScreen();
+                    return const SplashScreen();
                   })),
                   child: const Text('Questionnaire'))
             ],

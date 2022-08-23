@@ -27,8 +27,8 @@ class SignState extends State<Sign> {
         titleTextStyle: getBoldStyle(color: ColorManager.white),
       ),
       body: Container(
-        height: 300.0,
-        width: 300.0,
+        height: double.infinity,
+        width: double.infinity,
         decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage(ImageAssets.sign),
@@ -36,56 +36,58 @@ class SignState extends State<Sign> {
         ),
         child: Padding(
           padding: const EdgeInsets.all(AppPadding.p25),
-          child:
-              Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            const SizedBox(
-              height: 140.0,
-            ),
-            TextFormField(
-              keyboardType: TextInputType.emailAddress,
-              onFieldSubmitted: (String value) {
-                print(value);
-              },
-              decoration: const InputDecoration(
-                labelText: AppStrings.email,
-                prefixIcon: Icon(
-                  Icons.email,
-                ),
-                border: OutlineInputBorder(),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const SizedBox(
+                height: 140.0,
               ),
-            ),
-            const SizedBox(
-              height: 20.0,
-            ),
-            TextFormField(
-              keyboardType: TextInputType.visiblePassword,
-              onFieldSubmitted: (String value) {
-                print(value);
-              },
-              decoration: const InputDecoration(
-                labelText: AppStrings.password,
-                prefixIcon: Icon(
-                  Icons.password,
-                ),
-                border: OutlineInputBorder(),
-              ),
-            ),
-            const SizedBox(
-              height: 25.0,
-            ),
-            Container(
-              width: double.infinity,
-              color: ColorManager.primary,
-              alignment: Alignment.center,
-              child: MaterialButton(
-                onPressed: () {},
-                child: Text(
-                  AppStrings.sign,
-                  style: getBoldStyle(color: ColorManager.white),
+              TextFormField(
+                keyboardType: TextInputType.emailAddress,
+                onFieldSubmitted: (String value) {
+                  print(value);
+                },
+                decoration: const InputDecoration(
+                  labelText: AppStrings.email,
+                  prefixIcon: Icon(
+                    Icons.email,
+                  ),
+                  border: OutlineInputBorder(),
                 ),
               ),
-            ),
-          ]),
+              const SizedBox(
+                height: 20.0,
+              ),
+              TextFormField(
+                keyboardType: TextInputType.visiblePassword,
+                onFieldSubmitted: (String value) {
+                  print(value);
+                },
+                decoration: const InputDecoration(
+                  labelText: AppStrings.password,
+                  prefixIcon: Icon(
+                    Icons.password,
+                  ),
+                  border: OutlineInputBorder(),
+                ),
+              ),
+              const SizedBox(
+                height: 25.0,
+              ),
+              Container(
+                width: double.infinity,
+                color: ColorManager.primary,
+                alignment: Alignment.center,
+                child: MaterialButton(
+                  onPressed: () {},
+                  child: Text(
+                    AppStrings.sign,
+                    style: getBoldStyle(color: ColorManager.white),
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

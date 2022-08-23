@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
-import 'package:faculty_project/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 
+import 'layout/combine.dart';
 import 'shared/cubit/bloc_observer.dart';
 import 'shared/styles/strings_manager.dart';
 import 'shared/styles/theme_manager.dart';
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: AppStrings.appTitle,
       theme: getAppTheme(),
-      home: const SplashScreen(),
+      home: const Combine(),
     );
   }
 }

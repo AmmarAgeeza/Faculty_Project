@@ -5,5 +5,4 @@ class ImageAssets {
   static const String sign = '$imagePath/sign.gif';
 
   static const String combine = '$imagePath/combine.gif';
-
 }
