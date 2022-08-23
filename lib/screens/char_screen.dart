@@ -5,6 +5,6 @@ class ChartScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(child: Text('Chart'),);
+    return const Center(child: Text('Chart'));
   }
 }
