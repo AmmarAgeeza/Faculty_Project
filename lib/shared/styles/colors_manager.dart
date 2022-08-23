@@ -18,4 +18,8 @@ class ColorManager {
   static Color error = const Color(0xffe61f34);
   static Color blue = const Color(0xff4d8cac);
 
+  static Color white2 = const Color(0xFFD9E8F7);
+  static Color greyWhite = const Color(0xFFD5D3D3);
+  static Color white3 = const Color(0xFFECE8E8);
+  static Color blue10 = const Color(0xFFD9E8F7);
 }
